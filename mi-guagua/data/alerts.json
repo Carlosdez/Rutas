@@ -1,0 +1,5 @@
+[
+    {"id": "a1", "type": "rain", "active": true, "time_pct": 25, "cost_extra": 10, "message": "Lluvia intensa - tráfico lento"},
+    {"id": "a2", "type": "peak", "active": false, "time_pct": 40, "cost_extra": 0, "message": "Hora pico - tráfico congestionado"},
+    {"id": "a3", "type": "strike", "active": false, "time_pct": 100, "cost_extra": 20, "message": "Paro de transporte - posibles interrupciones"}
+]
