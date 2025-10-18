@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutas Dominicanas</title>
+    <meta name="description" content="Planifica tus rutas en República Dominicana">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#005c29">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">Rutas Dominicanas</h1>
+            <nav class="nav">
+                <button class="nav__toggle" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav__list">
+                    <li><a href="#search" class="nav__link">Buscar Ruta</a></li>
+                    <li><a href="#favorites" class="nav__link">Favoritas</a></li>
+                    <li><a href="#alerts" class="nav__link">Alertas</a></li>
+                    <li><button id="theme-toggle" class="nav__link">Modo Oscuro</button></li>
+                    <li><button id="language-toggle" class="nav__link">EN/ES</button></li>
+                    <li><button id="savings-toggle" class="nav__link">Modo Ahorro</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section id="search" class="section search-section">
+            <div class="container">
+                <h2 class="section__title">Planifica tu Ruta</h2>
+                
+                <form class="search-form" id="route-form">
+                    <div class="search-form__group">
+                        <label for="origin" class="search-form__label">Origen</label>
+                        <input type="text" id="origin" class="search-form__input" placeholder="Escribe tu origen..." required>
+                    </div>
+                    
+                    <div class="search-form__group">
+                        <label for="destination" class="search-form__label">Destino</label>
+                        <input type="text" id="destination" class="search-form__input" placeholder="Escribe tu destino..." required>
+                    </div>
+                    
+                    <div class="search-form__group">
+                        <label class="search-form__label">Medios de Transporte</label>
+                        <div class="transport-options">
+                            <label class="transport-option">
+                                <input type="checkbox" name="transport" value="concho" checked>
+                                <span class="transport-option__label">Concho</span>
+                            </label>
+                            <label class="transport-option">
+                                <input type="checkbox" name="transport" value="guagua" checked>
+                                <span class="transport-option__label">Guagua</span>
+                            </label>
+                            <label class="transport-option">
+                                <input type="checkbox" name="transport" value="carro-publico" checked>
+                                <span class="transport-option__label">Carro Público</span>
+                            </label>
+                            <label class="transport-option">
+                                <input type="checkbox" name="transport" value="motoconcho" checked>
+                                <span class="transport-option__label">Motoconcho</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="search-form__submit">Buscar Rutas</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="results" class="section results-section hidden">
+            <div class="container">
+                <h2 class="section__title">Rutas Encontradas</h2>
+                
+                <div class="alerts-container" id="alerts-container"></div>
+                
+                <div class="routes-list" id="routes-list"></div>
+            </div>
+        </section>
+
+        <section id="favorites" class="section favorites-section hidden">
+            <div class="container">
+                <h2 class="section__title">Rutas Favoritas</h2>
+                <div class="favorites-list" id="favorites-list"></div>
+            </div>
+        </section>
+
+        <section id="alerts" class="section alerts-section hidden">
+            <div class="container">
+                <!-- Contenido dinámico de alertas -->
+            </div>
+        </section>
+
+        <section id="map" class="section map-section hidden">
+    <div class="container">
+        <h2 class="section__title">Mapa de Ruta</h2>
+        <div class="map-container">
+            <svg class="schematic-map" id="schematic-map" viewBox="0 0 100 100">
+                <!-- El mapa se generará dinámicamente con JavaScript -->
+            </svg>
+            <div class="map-legend">
+                <div class="map-legend-item">
+                    <div class="map-legend-color map-legend-origin"></div>
+                    <span>Origen</span>
+                </div>
+                <div class="map-legend-item">
+                    <div class="map-legend-color map-legend-destination"></div>
+                    <span>Destino</span>
+                </div>
+                <div class="map-legend-item">
+                    <div class="map-legend-color" style="background: var(--primary-color);"></div>
+                    <span>Ubicaciones</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Rutas Dominicanas. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script de la aplicación -->
+    <script src="js/app.js"></script>
+</body>
+</html>
