@@ -1,0 +1,14 @@
+[
+    {"id": "gz", "name": "Gazcue", "coords": {"x": 100, "y": 150}},
+    {"id": "vs", "name": "Villa Consuelo", "coords": {"x": 200, "y": 100}},
+    {"id": "cm", "name": "Ciudad Modelo", "coords": {"x": 300, "y": 200}},
+    {"id": "nc", "name": "Naco", "coords": {"x": 150, "y": 250}},
+    {"id": "pl", "name": "Piantini", "coords": {"x": 250, "y": 300}},
+    {"id": "el", "name": "Ensanche La Fe", "coords": {"x": 350, "y": 150}},
+    {"id": "cc", "name": "Centro de los Heroes", "coords": {"x": 120, "y": 180}},
+    {"id": "zm", "name": "Zona Colonial", "coords": {"x": 80, "y": 120}},
+    {"id": "cp", "name": "Capotillo", "coords": {"x": 180, "y": 80}},
+    {"id": "27", "name": "27 de Febrero", "coords": {"x": 220, "y": 220}},
+    {"id": "im", "name": "Invivienda", "coords": {"x": 280, "y": 120}},
+    {"id": "sc", "name": "San Carlos", "coords": {"x": 150, "y": 180}}
+]
